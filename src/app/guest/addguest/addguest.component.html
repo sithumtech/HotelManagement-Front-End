@@ -1,0 +1,126 @@
+<!-- <body>
+    
+
+<form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+    <h1 class="a11y-hidden">Login Form</h1>
+    <div>
+      <label class="label-email">
+        <input type="email" class="text" name="Name" placeholder="Name" [(ngModel)]="guest.name" tabindex="1" required />
+        <span class="required">Name</span>
+      </label>
+    </div>
+
+    <div>
+        <label class="label-email">
+          <input type="email" class="text" name="email" placeholder="Email" [(ngModel)]="guest.email" tabindex="1" required />
+          <span class="required">Email</span>
+        </label>
+      </div>
+
+      <div>
+        <label class="label-email">
+          <input type="email" class="text" name="address" placeholder="Adress" [(ngModel)]="guest.address" tabindex="1" required />
+          <span class="required">Adress</span>
+        </label>
+      </div>
+
+      <div>
+        <label class="label-email">
+          <input type="email" class="text" name="phonenumber" placeholder="Phone number"  [(ngModel)]="guest.phoneNumber" tabindex="1" required />
+          <span class="required">Phone number</span>
+        </label>
+      </div>
+
+      <div>
+        <label class="label-email">
+          <input type="email" class="text" name="bookinghistory" placeholder="Booking History"  [(ngModel)]="guest.bookingHistory" tabindex="1" required />
+          <span class="required">Booking History</span>
+        </label>
+      </div>
+
+      <div>
+        <label class="label-email">
+          <input type="email" class="text" name="paymentDetail" placeholder="Payment Detail" tabindex="1" [(ngModel)]="guest.paymentDetail" required />
+          <span class="required">Payment Detail</span>
+        </label>
+      </div>
+      <div>
+        <label class="label-email">
+          <input type="email" class="text" name="currentBookingDetail" placeholder="Current Booking Detail" [(ngModel)]="guest.currentBookingDetail" tabindex="1" required />
+          <span class="required">Current Booking Detail</span>
+        </label>
+      </div>
+
+
+    <input type="submit" value="Add Guest" (click)="addGuest()">
+    <div class="email">
+      <a routerLink="">Go to Home Page</a>
+    </div>
+    <figure aria-hidden="true">
+      <div class="person-body"></div>
+      <div class="neck skin"></div>
+      <div class="head skin">
+        <div class="eyes"></div>
+        <div class="mouth"></div>
+      </div>
+      <div class="hair"></div>
+      <div class="ears"></div>
+      <div class="shirt-1"></div>
+      <div class="shirt-2"></div>
+    </figure>
+  </form>
+
+</body> -->
+
+
+<!-- [(ngModel)]="guest.email"
+[(ngModel)]="guest.address"
+[(ngModel)]="guest.phoneNumber"
+[(ngModel)]="guest.bookingHistory"
+         
+[(ngModel)]="guest.paymentDetail"
+[(ngModel)]="guest.currentBookingDetail" -->
+
+
+
+
+
+
+<div class="max-w-sm mx-auto">
+  <div class="mb-2">
+    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
+    <input type="text" [(ngModel)]="guest.name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-2">
+    <label for="email" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+    <input type="text" [(ngModel)]="guest.email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
+  </div>
+
+
+  <div class="mb-2">
+    <label for="adress"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Adress</label>
+    <input type="text" [(ngModel)]="guest.address" id="adress" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+
+  <div class="mb-2">
+    <label for="phonumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your PhoneNumber</label>
+    <input type="text"  [(ngModel)]="guest.phoneNumber" id="phonumber" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-2">
+    <label for="bookinghistory"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Booking History</label>
+    <input type="text" [(ngModel)]="guest.bookingHistory" id="bookinghistory" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-2">
+    <label for="payment"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Payment Detail</label>
+    <input type="text" [(ngModel)]="guest.paymentDetail" id="payment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-2">
+    <label for="bookingdetail"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Current Booking Detail</label>
+    <input type="text" [(ngModel)]="guest.currentBookingDetail" id="bookingdetail" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+
+
+  <div class="flex items-start mb-5">
+
+  </div>
+  <button type="submit" (click)="addGuest()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+</div>
